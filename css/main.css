@@ -492,7 +492,7 @@ Início seção diário de bordo
     width: 100%;
 }
 
-#builds-classes img, h3 {
+#builds-classes img, #builds-classes h3 {
     margin-top: 2%;
     margin-left: 10%;
     display: inline;
