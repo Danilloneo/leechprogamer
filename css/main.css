@@ -347,6 +347,7 @@ header .title {
 body, input {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
