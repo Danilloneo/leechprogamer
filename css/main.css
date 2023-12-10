@@ -297,9 +297,10 @@ header, section h2, section h3, form button {
 }
 
 header li {
+    margin: 0, auto;
     display: inline;
-    margin-left: 3px;
-    font-size: 13px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    align-items: center;
+    font-size: 11px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
@@ -323,7 +324,6 @@ header .button-selected {
     background-color: #191227;
     cursor: pointer;
     display: inline;
-    margin-left: 6px;
     color:#ecf0f1;
     text-decoration: underline;
 }
@@ -340,9 +340,10 @@ header .title {
 
 /*Início do Body*/
 
-body, input, textarea {
+body, input {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -355,7 +356,7 @@ body, input, textarea {
 
 
 #sobre .container button {
-    margin-left: 75%;
+    margin-left: 67%;
     background-color: #8c52ff;
     margin-bottom: 5px;
     border: #191227 solid;
@@ -441,7 +442,7 @@ section h3 {
 }
 
 #funcionamento .funcionamento-methods{
-    margin-left: 15px;  
+    margin-left: 4px;  
     width: 100%
 }
 
@@ -450,15 +451,13 @@ section h3 {
     width: 100%;
 }
 
-#carouselExampleIndicators {
-    margin-left: 30px;
-}
 
 
 .carousel-inner {
     box-sizing: border-box;
     border: #191227 solid;
     margin-top: 1px;
+    margin-left: 8px;
     width: 400px;
 }
 
