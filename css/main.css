@@ -200,7 +200,7 @@ section h3 {
 }
 
 #referencias .container {
-display: block;
+    display: block;
 }
 
 /*Fim seção funcionamento*/
@@ -233,6 +233,10 @@ No mais usando ul
 
 /*Início seção referência*/
 
+#referencias {
+    width: 100%s;
+}
+
 #referencias .container img {
     width: 10%;
 }
@@ -242,6 +246,7 @@ No mais usando ul
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 20px;
     margin-right: 15px;
     display: inline-block;
     width: 30.33%;
