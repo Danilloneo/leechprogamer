@@ -79,6 +79,7 @@ body, input {
     max-width: 1280px; /*Setando um alinhamento para monitores com essa resolução ou maior*/
     width: 100%;
     margin: 0 auto; /*Centro*/
+    overflow-x: hidden;
 }
 
 
