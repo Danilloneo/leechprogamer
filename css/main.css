@@ -512,7 +512,6 @@ Início seção diário de bordo
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-right: 40px;
     display: inline-block;
     width: 100%;
 }
@@ -528,7 +527,6 @@ Início seção diário de bordo
 .redes-methods img, .redes-methods h3 {
     display: inline-block;
     width: 5%;
-    margin-left: 2%;
 }
 
 /*Rodapé*/
@@ -538,5 +536,10 @@ footer {
     padding: 16px 0;
     text-align: center;
 }
-    
+
+#robbu-whatsapp-button {
+    margin: auto, auto;
+    padding: 0;
+}
+
 }
