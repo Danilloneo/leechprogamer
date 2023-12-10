@@ -1,8 +1,11 @@
+/*Reset do navegador*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*HEADER*/
 
 header {
     background-color: #191227;
@@ -18,8 +21,7 @@ header img {
 }
 
 header, section h2, section h3, form button {
-    /*Para não ter que colocar nos botões vírgula header ul li, colocamos
-    só header que engloba tudo que esta dentro */
+    /*Todas as seções importantes de títulos com fonte externa*/
     font-family: 'Bungee', sans-serif;
     font-weight: normal;
 }
@@ -44,55 +46,65 @@ header li a:hover {
     text-decoration: underline;
 } 
 
+/*FIM HEADER*/
+
+/*Início do Body*/
+
 body, input, textarea {
+    /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    max-width: 1280px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+    max-width: 1280px; /*Setando um alinhamento para monitores com essa resolução ou maior*/
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; /*Centro*/
 }
 
 
-#about .container button {
+/*INÍCIO DA SEÇÃO SOBRE*/
+
+#sobre .container button {
     margin-left: 75%;
     background-color: #8c52ff;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     border: #191227 solid;
 }
 
-#about .container button:hover {
+#sobre .container button:hover {
     text-decoration: underline;
     background-color: #8c52ff;
     border: #9f70fd solid;
 }
 
-#about .container button:focus {
+#sobre .container button:focus {
     text-decoration: underline;
     background-color: #8c52ff;
     border: #9f70fd solid;
 }
 
-#about .store-front {
+#sobre .store-front {
+    margin-right: 26px;
+    /*Aqui aplicou a margem nos logos também para resolver
+    criamos no html uma class dentro da img.
+    Então trocamos section img para a class que criamos*/
     border:#191227 solid;
     width: 50%;
 }
 
-#about .store-front:hover {
+
+#sobre .store-front:hover {
     border: #8c52ff solid;
 }
 
 header .container, section .container {
-    /*Quando colocamos a vírgula, reaproveitamos o mesmo ajuste
-    para container para posicionar lado a lado*/
     display: flex;
-    align-items: center; /*organizar na vertical*/
+    align-items: center; /*centraliza na horizontal*/
     justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
 }
 
 .brandis-list img {
-    width: 10%; /*Diminuindo os logos*/
+    width: 10%; /*Diminuindo os logos da seção sobre*/
 }
 
 .brandis-list li {
@@ -100,16 +112,12 @@ header .container, section .container {
     display: inline; /*Deixar um do lado do outro*/
 }
 
-section .container {
-    /*Uso de cascata, temos uma regra, usamos outra regra
-    subscrevendo a anterior.*/
-    /*Tivemos que reescrever a regra por causa do aling itens da section header
-    assim ele vai startar do começo da página*/
-    align-items: flex-start;
-}
+/*fim seção sobre*/
+
+/*CONFIGS GERAIS*/
 
 section {
-    padding: 24px 0; /*espaçar os elementos*/
+    padding: 24px 0; 
     color: #191227;
 }
 
@@ -121,18 +129,6 @@ section p {
     margin-bottom: 16px;
 }
 
-.store-front {
-    margin-right: 26px;
-    /*Aqui aplicou a margem nos logos também para resolver
-    criamos no html uma class dentro da img.
-    Então trocamos section img para a class que criamos*/
-    
-}
-
-.social-links img {
-    height: 24px;
-}
-
 .social-links li {
     display: inline;
     margin-right: 8px;
@@ -142,56 +138,21 @@ section p {
     text-decoration: none;
 }
 
-#contact .container {
-    display: block;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: space-between;
-}
-
-form input, form textarea, form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-form textarea {
-    resize: none; /*Textarea não manipulável tamanho*/
-    height: 180px;
-}
 
 section h3 {
     margin-bottom: 16px;
 }
+/*fim configs gerais*/
 
-form button {
-    background-color: #191227;
-    color: #ecf0f1;
-    border: none;
-    cursor: pointer;
+/*Seção funcionamento*/
+#funcionamento .container {
+    width: 100%;
 }
 
-form button:hover {
-    background-color: #31457c; /*Efeito passar mouse botão*/
+#funcionamento .funcionamento-methods{
+    width: 50%
 }
 
-input:focus, textarea:focus {
-    outline-color: #191227; /*Editar o contorno do click nos campos*/
-}
-
-#builds-classes .container {
-    margin-bottom: 10%;
-}
-
-footer {
-    background-color: #191227;
-    color: #ecf0f1;
-    padding: 16px 0;
-    text-align: center;
-}
 
 #carousel .container {
     width: 100%;
@@ -205,7 +166,7 @@ footer {
 .carousel-inner {
     box-sizing: border-box;
     border: #191227 solid;
-    margin-top: 4%;
+    margin-top: 1%;
     width: 600px;
 }
 
@@ -215,6 +176,40 @@ footer {
 
 #referencias .container {
 display: block;
+}
+
+/*Fim seção funcionamento*/
+
+/*--------------------
+
+Início seção diário de bordo
+
+Aqui pega as configurações gerais de container, e também as fontes gerais.
+No mais usando ul
+
+------------------------*/
+
+
+/*Inicio sessão builds*/
+
+#builds-classes .container {
+    margin-bottom: 10%;
+}
+
+#builds-desc .container {
+    display: block;
+}
+
+#builds-classes img {
+    width: 80%;
+}
+
+/*fim sessão builds*/
+
+/*Início seção referência*/
+
+#referencias .container img {
+    width: 10%;
 }
 
 .video {
@@ -231,23 +226,9 @@ display: block;
     border: #8c52ff solid;
 }
 
-#builds-desc .container {
-    display: block;
-}
+/*Fim seção referência*/
 
-#builds-classes img {
-    width: 80%;
-}
-
-#referencias .container img {
-    width: 10%;
-}
-
-.btn-btn-primary:hover {
-
-    text-decoration: underline;
-
-}
+/*Seção redes sociais*/
 
 .redes-methods img, .redes-methods h3 {
     display: inline-block;
@@ -255,11 +236,11 @@ display: block;
     margin-left: 2%;
 }
 
-#funcionamento .container {
-    width: 100%;
-}
-
-#funcionamento .funcionamento-methods{
-    width: 50%
+/*Rodapé*/
+footer {
+    background-color: #191227;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
 }
 
