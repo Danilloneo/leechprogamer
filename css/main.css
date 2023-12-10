@@ -527,6 +527,7 @@ Início seção diário de bordo
     margin: 0 auto;
     display: inline-block;
     width: 100%;
+    height: 200px;
 }
 
 .video:hover {
