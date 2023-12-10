@@ -29,7 +29,7 @@ header, section h2, section h3, form button {
 header li {
     display: inline;
     margin-left: 3px;
-    font-size: 14px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    font-size: 15px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
@@ -42,9 +42,28 @@ header li a {
 
 header li a:hover {
     display: inline;
-    color: #ecf0f1;;
+    color: #ecf0f1;
     text-decoration: underline;
 } 
+
+header .button-selected {
+    font-weight: 100;
+    border: none;
+    background-color: #191227;
+    cursor: pointer;
+    display: inline;
+    margin-left: 6px;
+    color:#ecf0f1;
+    text-decoration: underline;
+}
+
+header .title {
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 
 /*FIM HEADER*/
 
@@ -200,8 +219,8 @@ No mais usando ul
     display: block;
 }
 
-#builds-classes img {
-    width: 80%;
+#builds-classes img, #builds-classes h2 {
+    width: 70%;
 }
 
 /*fim sessão builds*/
@@ -244,3 +263,281 @@ footer {
     text-align: center;
 }
 
+
+/*RESPONSIVIDADE*/
+
+@media (min-width: 120px) and (max-width:700px) {
+    /*Reset do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #191227;
+    color: #ecf0f1;
+}
+
+header h1, section h2, section h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header img {
+    width: 20%;
+}
+
+header, section h2, section h3, form button {
+    /*Todas as seções importantes de títulos com fonte externa*/
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;
+}
+
+header li {
+    display: inline;
+    margin-left: 3px;
+    font-size: 13px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+}
+/*O color no botão só vai funcionar colocando também no a*/
+
+header li a {
+    display: inline;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #8c52ff;
+    text-decoration: none;
+} 
+
+header li a:hover {
+    display: inline;
+    color: #ecf0f1;
+    text-decoration: underline;
+} 
+
+header .button-selected {
+    font-weight: 100;
+    border: none;
+    background-color: #191227;
+    cursor: pointer;
+    display: inline;
+    margin-left: 6px;
+    color:#ecf0f1;
+    text-decoration: underline;
+}
+
+header .title {
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/*FIM HEADER*/
+
+/*Início do Body*/
+
+body, input, textarea {
+    /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; /*Centro*/
+}
+
+
+/*INÍCIO DA SEÇÃO SOBRE*/
+
+
+#sobre .container button {
+    margin-left: 75%;
+    background-color: #8c52ff;
+    margin-bottom: 5px;
+    border: #191227 solid;
+}
+
+#sobre .container button:hover {
+    text-decoration: underline;
+    background-color: #8c52ff;
+    border: #9f70fd solid;
+}
+
+#sobre .container button:focus {
+    text-decoration: underline;
+    background-color: #8c52ff;
+    border: #9f70fd solid;
+}
+
+#sobre .store-front {
+    margin-right: 26px;
+    /*Aqui aplicou a margem nos logos também para resolver
+    criamos no html uma class dentro da img.
+    Então trocamos section img para a class que criamos*/
+    border:#191227 solid;
+    width: 100%;
+}
+
+
+#sobre .store-front:hover {
+    border: #8c52ff solid;
+}
+
+header .container, section .container {
+    display: block;
+    align-items: center; /*centraliza na horizontal*/
+    justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
+}
+
+.brandis-list img {
+    width: 10%; /*Diminuindo os logos da seção sobre*/
+}
+
+.brandis-list li {
+    margin-right: 8px;
+    display: inline; /*Deixar um do lado do outro*/
+}
+
+/*fim seção sobre*/
+
+/*CONFIGS GERAIS*/
+
+section {
+    padding: 24px 0; 
+    color: #191227;
+}
+
+section h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 16px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+
+section h3 {
+    margin-bottom: 16px;
+}
+/*fim configs gerais*/
+
+/*Seção funcionamento*/
+#funcionamento .container {
+    width: 100%;
+}
+
+#funcionamento .funcionamento-methods{
+    margin-left: 15px;  
+    width: 100%
+}
+
+
+#carousel .container {
+    width: 100%;
+}
+
+#carouselExampleIndicators {
+    margin-left: 1px;
+}
+
+
+.carousel-inner {
+    box-sizing: border-box;
+    border: #191227 solid;
+    margin-top: 1%;
+    width: 400px;
+}
+
+.carousel-inner:hover {
+    border: #8c52ff solid;
+}
+
+#referencias .container {
+display: block;
+}
+
+/*Fim seção funcionamento*/
+
+/*--------------------
+
+Início seção diário de bordo
+*/
+
+#diariodebordo {
+    width: 100%;
+    margin-left: 15px; 
+}
+
+
+
+/*Inicio sessão builds*/
+
+#builds-classes .container {
+    margin-bottom: 10%;
+    display: inline;
+    width: 100%;
+}
+
+#builds-classes img, h3 {
+    margin-top: 2%;
+    margin-left: 10%;
+    display: inline;
+    width: 40%;
+}
+
+/*fim sessão builds*/
+
+/*Início seção referência*/
+
+#referencias .container img {
+    width: 10%;
+    position: relative;
+}
+
+.video {
+    border: #191227 solid;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+.video:hover {
+    border: #8c52ff solid;
+}
+
+/*Fim seção referência*/
+
+/*Seção redes sociais*/
+
+.redes-methods img, .redes-methods h3 {
+    display: inline-block;
+    width: 5%;
+    margin-left: 2%;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #191227;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+}
+    
+}
