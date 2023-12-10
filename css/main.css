@@ -273,7 +273,7 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -537,10 +537,11 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #robbu-whatsapp-button {
-    margin: auto, auto;
+    margin: 0;
     padding: 0;
 }
 
