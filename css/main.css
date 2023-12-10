@@ -75,6 +75,10 @@ body, input {
     overflow-x: hidden;
 }
 
+#global {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1280px; /*Setando um alinhamento para monitores com essa resolução ou maior*/
     width: 100%;
