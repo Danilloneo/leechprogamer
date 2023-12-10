@@ -80,7 +80,7 @@ body, input {
 }
 
 .container {
-    min-width: 1280px; /*Setando um alinhamento para monitores com essa resolução ou maior*/
+    max-width: 1980px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
@@ -273,7 +273,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 100px) and (max-width:1108px) {
+@media (min-width: 100px) and (max-width:800px) {
     /*Reset do navegador*/
 * {
     margin: 0;
