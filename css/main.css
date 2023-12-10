@@ -267,7 +267,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 120px) and (max-width:700px) {
+@media (min-width: 100px) and (max-width:700px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -494,6 +494,7 @@ Início seção diário de bordo
 
 #builds-classes img, #builds-classes h3 {
     margin-top: 2%;
+    margin-left: 10%;
     display: inline;
     width: 40%;
 }
