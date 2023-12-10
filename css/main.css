@@ -317,7 +317,7 @@ header li {
     display: inline;
     justify-content: space-between;
     align-items: center;
-    font-size: 11px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    font-size: 8px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
