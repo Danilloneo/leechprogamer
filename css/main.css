@@ -281,6 +281,7 @@ footer {
 header {
     background-color: #191227;
     color: #ecf0f1;
+    width: 100%;
 }
 
 header h1, section h2, section h3 {
@@ -531,6 +532,7 @@ Início seção diário de bordo
 
 /*Rodapé*/
 footer {
+    width: 100%;
     background-color: #191227;
     color: #ecf0f1;
     padding: 16px 0;
