@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: none;
 }
 
 /*HEADER*/
@@ -70,9 +69,10 @@ header .title {
 
 /*Início do Body*/
 
-body, input, textarea {
+body, input {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -170,7 +170,7 @@ section h3 {
 }
 
 #funcionamento .funcionamento-methods{
-    width: 50%
+    width: 50%;
 }
 
 
@@ -273,7 +273,7 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+
 }
 
 /*HEADER*/
@@ -347,7 +347,6 @@ header .title {
 body, input {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 .container {
@@ -525,19 +524,24 @@ Início seção diário de bordo
 
 /*Seção redes sociais*/
 
-.redes-methods img, .redes-methods h3 {
-    display: inline-block;
+#redessociais-desc .redes-methods h3 {
+    width: 100%;
+    height: 100%;
+}
+
+.redes-methods img {
+    display: block;
     width: 5%;
 }
 
 /*Rodapé*/
 footer {
+    height: 100%;
     width: 100%;
     background-color: #191227;
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center;
-    overflow-x: hidden;
 }
 
 #robbu-whatsapp-button {
