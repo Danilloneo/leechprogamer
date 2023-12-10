@@ -272,7 +272,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 100px) and (max-width:700px) {
+@media (min-width: 100px) and (max-width:1300px) {
     /*Reset do navegador*/
 * {
     margin: 0;
