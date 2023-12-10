@@ -303,14 +303,14 @@ header li {
     display: inline;
     justify-content: space-between;
     align-items: center;
-    font-size: 8px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    font-size: 11px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
 header li a {
     display: inline;
     margin-left: 6px;
-    margin-right: 6px;
+    margin-right: 3px;
     color: #8c52ff;
     text-decoration: none;
 } 
