@@ -206,7 +206,7 @@ footer {
     box-sizing: border-box;
     border: #191227 solid;
     margin-top: 4%;
-    width: 500px;
+    width: 600px;
 }
 
 .carousel-inner:hover {
@@ -245,6 +245,21 @@ display: block;
 
 .btn-btn-primary:hover {
 
-    text-decoration: underline;;
+    text-decoration: underline;
 
 }
+
+.redes-methods img, .redes-methods h3 {
+    display: inline-block;
+    width: 5%;
+    margin-left: 2%;
+}
+
+#funcionamento .container {
+    width: 100%;
+}
+
+#funcionamento .funcionamento-methods{
+    width: 50%
+}
+
