@@ -82,7 +82,7 @@ body{
 }
 
 .container {
-    max-width: 1980px;
+    max-width: 1990px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
@@ -329,7 +329,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 80px) and (max-width:800px) {
+@media (min-width: 100px)(max-width:1568px) {
     /*Reset do navegador*/
 * {
     margin: 0;
