@@ -423,6 +423,7 @@ body {
 /*INÍCIO DA SEÇÃO SOBRE*/
 
 #global {
+        width: 100%;
         overflow-x: hidden;
         display: block;}
 
@@ -624,6 +625,7 @@ footer {
 }
 
 #produtos{
+    width: 100%;
     margin: 0 auto;
 }
 
