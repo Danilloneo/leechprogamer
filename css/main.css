@@ -420,11 +420,6 @@ body {
 
 /*INÍCIO DA SEÇÃO SOBRE*/
 
-#global {
-        width: 100%;
-        overflow-x: hidden;
-        display: block;}
-
 .text-sobre {
         display: block;
         margin: 0 auto;}
