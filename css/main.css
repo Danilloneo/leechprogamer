@@ -622,6 +622,10 @@ footer {
     padding: 0;
 }
 
+#produtos {
+    display: block;
+}
+
 .nossosprodutos {
     margin: 0 auto;
 }
