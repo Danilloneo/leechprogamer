@@ -330,13 +330,12 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 100px) and (max-width:800px) {
+@media (min-width: 80px) and (max-width:800px) {
     /*Reset do navegador*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /*HEADER*/
@@ -400,7 +399,6 @@ header .title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    box-sizing: border-box;
 }
 
 /*FIM HEADER*/
