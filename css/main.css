@@ -10,6 +10,7 @@
 header {
     background-color: #191227;
     color: #ecf0f1;
+    padding-right: 5%;
 }
 
 header h1, section h2 {
@@ -27,9 +28,10 @@ header, section h2, section h3, form button {
 }
 
 header li {
+
     display: inline;
     margin-left: 3px;
-    font-size: 15px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    font-size: 20px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
@@ -89,8 +91,18 @@ body, input {
 
 /*INÍCIO DA SEÇÃO SOBRE*/
 
+#global {
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+}
+
+.text-sobre {
+    margin-top: -350px;
+}
+
 #sobre .container button {
-    margin-left: 75%;
+    margin-left: 80%;
     background-color: #8c52ff;
     margin-bottom: 5px;
     border: #191227 solid;
@@ -117,7 +129,6 @@ body, input {
     width: 50%;
 }
 
-
 #sobre .store-front:hover {
     border: #8c52ff solid;
 }
@@ -129,7 +140,7 @@ header .container, section .container {
 }
 
 .brandis-list img {
-    width: 10%; /*Diminuindo os logos da seção sobre*/
+    width: 5%; /*Diminuindo os logos da seção sobre*/
 }
 
 .brandis-list li {
@@ -174,8 +185,12 @@ section h3 {
     width: 100%;
 }
 
+#funcionamento ul {
+    margin-left: 1%;
+}
+
 #funcionamento .funcionamento-methods{
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -183,9 +198,6 @@ section h3 {
     width: 100%;
 }
 
-#carouselExampleIndicators {
-    margin-left: 1px;
-}
 
 
 .carousel-inner {
@@ -207,7 +219,13 @@ section h3 {
 
 /*--------------------
 
-Início seção diário de bordo
+Início seção diário de bordo*/
+
+#diariodebordo ul {
+    margin-left: 1%;
+}
+
+/*
 
 Aqui pega as configurações gerais de container, e também as fontes gerais.
 No mais usando ul
@@ -250,7 +268,7 @@ No mais usando ul
     margin-right: 15px;
     display: inline-block;
     width: 30.33%;
-    height: 200px;
+    height: 300px;
 }
 
 .video:hover {
@@ -266,6 +284,40 @@ No mais usando ul
     width: 5%;
     margin-left: 2%;
 }
+
+/*páginas upchar e leech*/
+
+
+#produtos .container img {
+    width: 30%;
+    height: 20%;
+}
+
+#ultimas-novidades h2, #ultimas-novidades p{
+    margin-left: 2%;
+}
+
+#ultimas-novidades ul {
+    width: 100%;
+    margin-left: 2%;
+}
+
+#produtos .container .nossosprodutos{
+    margin-left: 2%;    
+    display: block;
+}
+
+#produtos .nossosprodutos {
+    border-bottom: #191227 solid 3px;
+    margin-top: -10%;
+    display: block;
+}
+
+#produtos .sessaolista {
+    width: 100%;
+    display: block;
+}
+
 
 /*Rodapé*/
 footer {
@@ -369,6 +421,13 @@ body, input {
 
 
 /*INÍCIO DA SEÇÃO SOBRE*/
+
+#global {
+        display: block;}
+
+.text-sobre {
+        display: block;
+        margin: 0;}
 
 
 #sobre .container button {
@@ -561,6 +620,10 @@ footer {
 #robbu-whatsapp-button {
     margin: 0;
     padding: 0;
+}
+
+.nossosprodutos {
+    margin: 0;
 }
 
 }
