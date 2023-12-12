@@ -628,24 +628,23 @@ footer {
 
 
 
-#global #produtos{
+#produtos{
     width: 100%;
     margin: 0;
     display: block;
 }
 
 .nossosprodutos{
+    width: 100%;
     display: block;
 }
 
 
-#produtos .container img {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 30%;
+#produtos img {
+    box-sizing: border-box;
+    margin: 0 auto;
     display: block;
-    width: 100%;
+    width: 75%;
 }
 
 #guiaup .container {
