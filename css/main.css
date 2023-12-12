@@ -713,6 +713,7 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
     header {
         background-color: #191227;
         color: #ecf0f1;
+        width: 100%;
     }
     
     header h1 {
@@ -724,7 +725,7 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
     }
 
     header .title {
-        font-size: 50px;
+        font-size: 300%;
     }
     
     header img {
