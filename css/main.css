@@ -328,7 +328,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width: 80px) and (max-width:800px) {
+@media (min-width:80px) and (max-width: 800px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -657,7 +657,7 @@ footer {
 
 }
 
-@media (min-width: 801px) and (max-width:1680px){
+@media  (min-width:801) and (max-width:1680px){
         /*Reset do navegador*/
 * {
     margin: 0;
