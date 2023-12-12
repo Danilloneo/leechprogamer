@@ -412,11 +412,13 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     width: 100%;
+    display: border-box;
 }
 
 .container {
     width: 100%;
     margin: 0 auto; /*Centro*/
+    overflow-x: hidden;
 }
 
 
