@@ -327,7 +327,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -667,7 +667,7 @@ footer p{
 
 }
 
-@media only screen and (min-width: 1600px)
+@media only screen and (min-width: 1500px)
 {
     * {
         margin: 0;
@@ -745,11 +745,13 @@ footer p{
         box-sizing: border-box;
     }
 
-    #sobre .container{
+    section #sobre .container{
         margin: 0;
         width: 100%;
         box-sizing:content-box;
         justify-content: space-between;
+        overflow: hidden;
+        
     }
     
     #sobre .store-front {
@@ -833,7 +835,7 @@ footer p{
 
     /*builds das classes*/
 
-    #builds-classes {
+    section #builds-classes {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -848,8 +850,8 @@ footer p{
         margin: 0 auto;
     }
     
-    #builds-classes .classes img, .classes h2, .classes h3 {
-        width: 4%;
+    section #builds-classes img {
+        width: 30%;
     }
 
     .social-links img {
@@ -917,12 +919,16 @@ footer p{
         box-sizing: border-box;
     }
 
-    #guiaup {
+    section #guiaup .container {
         justify-content: space-between;
         text-align: left;
         width: 100%;
         margin: 20px;
         margin-top: 0;
+    }
+
+    section #guiaup .container {
+        overflow: hidden;
     }
 
 
