@@ -632,7 +632,8 @@ footer {
     display: block;
 }
 
-.nossosprodutos{
+#produtos .nossosprodutos{
+    margin-top: 100px;
     width: 100%;
     display: block;
 }
@@ -651,6 +652,7 @@ footer {
 }
 
 #guiaup h2, #guiaup ul, #guiaup p {
+    display: block;
     margin-left: 2%;
 }
 
