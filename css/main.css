@@ -340,8 +340,7 @@ footer {
 header {
     background-color: #191227;
     color: #ecf0f1;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     box-sizing: content-box;
 }
 
@@ -353,7 +352,7 @@ header h1, section h2, section h3 {
 }
 
 header img {
-    width: 20%;
+    width: 11vh;
 }
 
 
@@ -411,7 +410,6 @@ body {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    width: 100%;
     width: 100%;
 }
 
