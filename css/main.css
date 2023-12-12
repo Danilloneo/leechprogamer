@@ -68,7 +68,7 @@
     /*Inicio sessão sobre*/
     
     .container {
-        max-width: 2000px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+        max-width: 1600px;
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
@@ -273,7 +273,7 @@
 
     }
 
-    @media only screen and (min-width: 80px) {
+@media only screen and (min-width: 80px) {
         /*Reset do navegador*/
            * {
             margin: 0;
@@ -370,6 +370,7 @@
         }
         
         .container {
+            max-width: 1600px;
             width: 100%;
             margin: 0 auto; /*Centro*/
             overflow-x: hidden;
@@ -614,8 +615,7 @@
         
         }
 
-        
-@media only screen and (min-device-width: 1200px){
+@media only screen and (min-width: 1200px){
     /*Reset do navegador*/
 * {
 margin: 0;
@@ -700,6 +700,7 @@ width: 100%;
 }
 
 .container {
+max-width: 1600px;
 width: 100%;
 margin: 0 auto; /*Centro*/
 overflow-x: hidden;
@@ -953,7 +954,7 @@ width: 100%;
 }
 
 
-@media only screen and (min-device-width: 1600px)
+@media only screen and (min-width: 1600px)
 {
     * {
         margin: 0;
@@ -1024,8 +1025,7 @@ width: 100%;
     
     /*Inicio sessão sobre*/
     
-    .container {
-        max-width: 1680px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+    .container {    
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
@@ -1231,7 +1231,7 @@ width: 100%;
     }
 }
 
-@media (min-device-width: 1900px){
+@media (min-width: 1900px){
     * {
         margin: 0;
         padding: 0;
@@ -1302,7 +1302,7 @@ width: 100%;
     /*Inicio sessão sobre*/
     
     .container {
-        max-width: 1680px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+        max-width: 1600px;
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
