@@ -1235,13 +1235,13 @@ footer {
         box-sizing: border-box;
         display: inline;
         float: left;
-        width: 35%;
-        margin-right: 2%;
+        width: 32%;
+        margin-right: 5%;
     }
 
     #produtos .nossosprodutos {
         text-align: left;
-        padding-right: 3%;
+        padding-right: 7%;
         width: 100%;
         box-sizing: border-box;
         margin-top: -10%;
@@ -1254,6 +1254,25 @@ footer {
         width: 100%;
         box-sizing: border-box;
     }
+
+    #guiaup {
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+        margin: 20px;
+        margin-top: 0;
+    }
+
+
+    #guiaup img {
+        box-sizing: border-box;
+        display: inline;
+        float: left;
+        width: 35%;
+        margin-right: 2%;
+        margin-right: 10%;
+    }
+
         
     footer {
         background-color: #191227;
