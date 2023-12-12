@@ -437,7 +437,7 @@ body {
         margin: 0 auto;}
 
 
-#sobre .container button {
+section #sobre .container button {
     margin-left: 67%;
     background-color: #8c52ff;
     margin-bottom: 5px;
@@ -456,12 +456,13 @@ body {
     border: #9f70fd solid;
 }
 
-#sobre .store-front {
+section #sobre .store-front {
     /*Aqui aplicou a margem nos logos também para resolver
     criamos no html uma class dentro da img.
     Então trocamos section img para a class que criamos*/
     border:#191227 solid;
     width: 100%;
+    margin-left: 0;
 }
 
 
@@ -756,8 +757,8 @@ footer p{
     
     #sobre .store-front {
         float: left;
-        margin-left: 10%;
-        width: 33.33%;
+        margin-left: 1%;
+        width: 43.33%;
         box-sizing: border-box;
         display: inline;
     }
