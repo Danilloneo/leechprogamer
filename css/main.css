@@ -1,164 +1,188 @@
-/*Reset do navegador*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*HEADER*/
-
-
-header {
-    background-color: #191227;
-    color: #ecf0f1;
-    padding-right: 10%;
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
-header h1, section h2 {
-    font-weight: normal;
+header .container, section .container {
+    /*Quando colocamos a vírgula, reaproveitamos o mesmo ajuste
+    para container para posicionar lado a lado*/
+    display: flex;
+    justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
 }
 
-header img {
-    width: 15%;
-}
-
-header, section h2, section h3, form button {
-    /*Todas as seções importantes de títulos com fonte externa*/
+header, section h2, section h3 {
+    /*Para não ter que colocar nos botões vírgula header ul li, colocamos
+    só header que engloba tudo que esta dentro */
     font-family: 'Bungee', sans-serif;
     font-weight: normal;
 }
 
-header li {
-    display: inline;
-    font-size: 16px; /*Diminuimos os botões pra o nome do site ficar destacado*/
-}
-/*O color no botão só vai funcionar colocando também no a*/
-
-header li a {
-    display: inline;
-    margin-left: 10px;
-    color: #8c52ff;
-    text-decoration: none;
-} 
-
-header li a:hover {
-    display: inline;
-    color: #ecf0f1;
-    text-decoration: underline;
-} 
-
-header .button-selected {
-    font-weight: 100;
-    border: none;
+header {
     background-color: #191227;
-    cursor: pointer;
+    color: #ecf0f1;
+}
+
+header h1 {
+    justify-content: border-box;
     display: inline;
-    margin-left: 6px;
-    color:#ecf0f1;
-    text-decoration: underline;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 130px;
 }
 
 header .title {
-    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 50px;
 }
 
-header .container, section .container {
-    display: flex;
-    align-items: center; /*centraliza na horizontal*/
-    justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
+header img {
+    display: inline;
+    float: right;
+    width: 15%;
 }
 
-
-/*FIM HEADER*/
-
-/*Início do Body*/
-
-body{
-    /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+header li {
+    box-sizing: border-box;
+    display: inline;
+    margin-left: -2%;
+    padding-right: 2%;
+    font-size: 20px; /*Diminuimos os botões pra o nome do site ficar destacado*/      
+    color: #8c52ff;
+    text-decoration: none;
 }
+/*O color no botão só vai funcionar colocando também no a*/
 
-#global {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+
+header li a:hover {
+    display: inline;
+    color: #ecf0f1;;
+    text-decoration: underline;
+} 
+
+/*Inicio sessão sobre*/
 
 .container {
-    max-width: 1700px;
+    max-width: 1680px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
     width: 100%;
-    margin: 0 auto; /*Centro*/
-    overflow-x: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
+#sobre .container{
+    margin: 0;
+    width: 100%;
+    box-sizing:content-box;
+    justify-content: space-between;
+}
 
-/*INÍCIO DA SEÇÃO SOBRE*/
-
-/*Fachada loja*/
 #sobre .store-front {
-    /*Aqui aplicou a margem nos logos também para resolver
-    criamos no html uma class dentro da img.
-    Então trocamos section img para a class que criamos*/
-    border:#191227 solid;
+    float: left;
+    margin-left: 10%;
     width: 33.33%;
     box-sizing: border-box;
-    margin: 0;
+    display: inline;
 }
 
 #sobre .text-sobre {
+    width: 50.33%;
+    display: inline;
     box-sizing: border-box;
-    width: 100%;
-    margin: 0;
+    float: right;
 }
-
 
 #sobre .container button {
-    margin-left: 100%;
+    box-sizing: border-box;
+    margin-left: 75%;
     background-color: #8c52ff;
-    margin-bottom: 5px;
-    border: #191227 solid;
+    position: relative;
+}   
+
+
+#sobre .brandis-list img {
+    width: 3%; /*Diminuindo os logos*/
 }
 
-#sobre .container button:hover {
-    text-decoration: underline;
-    background-color: #8c52ff;
-    border: #9f70fd solid;
+section .container {
+    /*Uso de cascata, temos uma regra, usamos outra regra
+    subscrevendo a anterior.*/
+    /*Tivemos que reescrever a regra por causa do aling itens da section header
+    assim ele vai startar do começo da página*/
+    align-items:flex-start;
+    justify-content: space-between;
 }
 
-#sobre .container button:focus {
-    text-decoration: underline;
-    background-color: #8c52ff;
-    border: #9f70fd solid;
+/*Sessão funcionamento*/
+
+#funcionamento .container {
+    width: 100%;
+    display: inline;
+    justify-content: space-between;
 }
 
-
-#sobre .store-front:hover {
-    border: #8c52ff solid;
+#funcionamento .funcionamento-methods {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
 }
 
-.brandis-list img {
-    width: 5%; /*Diminuindo os logos da seção sobre*/
+#funcionamento #carousel .container {
+    justify-content: space-between;
 }
 
-/*fim seção sobre*/
-
-/*CONFIGS GERAIS*/
-
-section {
-    padding: 24px 0; 
-    color: #191227;
+#funcionamento #carouselExampleIndicators {
+    float: right;
+    inline-size: 40%;
+    display: block;
+    margin-right: 5%;
 }
 
-section h2 {
-    margin-bottom: 16px;
+#referencias {
+    text-align: center;
+    width: 100%;
 }
 
-section p {
-    margin-bottom: 16px;
+#referencias .container {
+    box-sizing: border-box;
+    display: inline;
+}
+
+#referencias .video {
+    margin-left: 1%;
+    margin-right: 10px;
+    display: inline;
+    height: 350px;
+    width: 30.33%;
+}
+
+/*builds das classes*/
+
+#builds-classes {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#builds-classes .classes {
+    width: 100%;
+    display: inline;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#builds-classes .classes img, .classes h2, .classes h3 {
+    width: 4%;
+}
+
+.social-links img {
+    height: 24px;
 }
 
 .social-links li {
@@ -170,156 +194,81 @@ section p {
     text-decoration: none;
 }
 
-
-section h3 {
-    margin-bottom: 16px;
+#contact .container {
+    display: block;
 }
-/*fim configs gerais*/
 
-/*Seção funcionamento*/
-#funcionamento .container {
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+} 
+
+#produtos{
+    justify-content: space-between;
+    text-align: center;
     width: 100%;
-}
-
-#funcionamento ul {
-    margin-left: 1%;
-}
-
-#funcionamento .funcionamento-methods{
-    width: 100%;
+    margin: 20px;
+    margin-top: 0;
 }
 
 
-#carousel .container {
-    width: 100%;
+#produtos .ultimas-novidades {
+    margin-top: 10%;
+
 }
 
-
-
-.carousel-inner {
+#produtos .container {
     box-sizing: border-box;
-    border: #191227 solid;
-    margin-top: 1%;
-    width: 600px;
+    display: inline;
 }
 
-.carousel-inner:hover {
-    border: #8c52ff solid;
-}
-
-#referencias .container {
-    display: block;
-}
-
-/*Fim seção funcionamento*/
-
-/*--------------------
-
-Início seção diário de bordo*/
-
-#diariodebordo ul {
-    margin-left: 1%;
-}
-
-/*
-
-Aqui pega as configurações gerais de container, e também as fontes gerais.
-No mais usando ul
-
-------------------------*/
-
-
-/*Inicio sessão builds*/
-
-#builds-classes .container {
-    margin-bottom: 10%;
-}
-
-#builds-desc .container {
-    display: block;
-}
-
-#builds-classes img, #builds-classes h2 {
-    width: 70%;
-}
-
-/*fim sessão builds*/
-
-/*Início seção referência*/
-
-#referencias {
-    width: 100%;
-}
-
-#referencias .container img {
-    width: 10%;
-}
-
-.video {
-    border: #191227 solid;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 15px;
-    margin-right: 15px;
-    display: inline-block;
-    width: 30.33%;
-    height: 300px;
-}
-
-.video:hover {
-    border: #8c52ff solid;
-}
-
-/*Fim seção referência*/
-
-/*Seção redes sociais*/
-
-.redes-methods img, .redes-methods h3 {
-    display: inline-block;
-    width: 5%;
-    margin-left: 2%;
-}
-
-/*páginas upchar e leech*/
-
-
-#produtos .container img {
-    width: 30%;
-    height: 20%;
-}
-
-
-#ultimas-novidades h2, #ultimas-novidades p{
-    margin-left: 10%;
-}
-
-#ultimas-novidades ul {
-    margin-left: 10%;
-    width: 100%;
-}
-
-#produtos .container .nossosprodutos{
-    margin-left: 2%;    
-    display: block;
+#produtos img {
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 32%;
+    margin-right: 5%;
 }
 
 #produtos .nossosprodutos {
-    border-bottom: #191227 solid 3px;
-    margin-top: -10%;
-    display: block;
-}
-
-#produtos .sessaolista {
+    text-align: left;
+    padding-right: 7%;
     width: 100%;
-    display: block;
+    box-sizing: border-box;
+    margin-top: -10%;
+    border: none;
+}
+
+#produtos .resnovidades, .resnovidades h3{
+    text-align: left;
+    padding-right: 3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#guiaup {
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    margin: 20px;
+    margin-top: 0;
 }
 
 
-/*Rodapé*/
+#guiaup img {
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 35%;
+    margin-right: 2%;
+    margin-right: 10%;
+}
+
+    
 footer {
     background-color: #191227;
     color: #ecf0f1;
-    padding: 16px 0;
-    text-align: center;
+    padding: 18px;
+    width: 100%;
+
 }
