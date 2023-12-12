@@ -89,7 +89,7 @@ body{
 }
 
 .container {
-    max-width: 1700px;
+    max-width: 1680px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
@@ -420,7 +420,6 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     width: 100%;
-    display: border-box;
 }
 
 .container {
@@ -753,6 +752,7 @@ body {
 }
 
 .container {
+    max-width: 1690px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
