@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-device-width: 1200px){
     /*Reset do navegador*/
 * {
 margin: 0;
