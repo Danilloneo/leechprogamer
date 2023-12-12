@@ -1,5 +1,6 @@
+@media only screen and (min-width: 80px) {
 /*Reset do navegador*/
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,39 +8,47 @@
 
 /*HEADER*/
 
-
 header {
     background-color: #191227;
     color: #ecf0f1;
-    padding-right: 10%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-header h1, section h2 {
+header h1, section h2, section h3 {
+    font-size: 20px;
     font-weight: normal;
-}
-
-header img {
-    width: 15%;
-}
-
-header, section h2, section h3, form button {
-    /*Todas as seções importantes de títulos com fonte externa*/
     font-family: 'Bungee', sans-serif;
     font-weight: normal;
 }
 
+header img {
+    float: left;
+    margin: 0;
+    width: 11vh;
+}
+
+
 header li {
+    padding-right: 3%;
+    width: 100%;
+    margin: 0, auto;
     display: inline;
-    font-size: 16px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
 header li a {
     display: inline;
-    margin-left: 10px;
     color: #8c52ff;
     text-decoration: none;
 } 
+
+header li :nth-child(1){
+    margin-left: -0.15%;
+}
 
 header li a:hover {
     display: inline;
@@ -53,43 +62,39 @@ header .button-selected {
     background-color: #191227;
     cursor: pointer;
     display: inline;
-    margin-left: 6px;
     color:#ecf0f1;
     text-decoration: underline;
 }
 
 header .title {
+    margin-top: 20px;
+    font-size: 20px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 header .container, section .container {
-    display: flex;
+    display: block;
     align-items: center; /*centraliza na horizontal*/
     justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
 }
-
 
 /*FIM HEADER*/
 
 /*Início do Body*/
 
-body{
+body {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-}
-
-#global {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    display: border-box;
 }
 
 .container {
-    max-width: 1700px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
@@ -98,26 +103,14 @@ body{
 
 /*INÍCIO DA SEÇÃO SOBRE*/
 
-/*Fachada loja*/
-#sobre .store-front {
-    /*Aqui aplicou a margem nos logos também para resolver
-    criamos no html uma class dentro da img.
-    Então trocamos section img para a class que criamos*/
-    border:#191227 solid;
-    width: 33.33%;
-    box-sizing: border-box;
-    margin: 0;
-}
-
 #sobre .text-sobre {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-}
+        width: 100%;
+        display: block;
+        margin: 0 auto;}
 
 
 #sobre .container button {
-    margin-left: 100%;
+    margin-left: 67%;
     background-color: #8c52ff;
     margin-bottom: 5px;
     border: #191227 solid;
@@ -135,13 +128,28 @@ body{
     border: #9f70fd solid;
 }
 
+#sobre .store-front {
+    /*Aqui aplicou a margem nos logos também para resolver
+    criamos no html uma class dentro da img.
+    Então trocamos section img para a class que criamos*/
+    border:#191227 solid;
+    width: 100%;
+}
+
 
 #sobre .store-front:hover {
     border: #8c52ff solid;
 }
 
+
+
 .brandis-list img {
-    width: 5%; /*Diminuindo os logos da seção sobre*/
+    width: 10%; /*Diminuindo os logos da seção sobre*/
+}
+
+.brandis-list li {
+    margin-right: 8px;
+    display: inline; /*Deixar um do lado do outro*/
 }
 
 /*fim seção sobre*/
@@ -154,6 +162,7 @@ section {
 }
 
 section h2 {
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -181,12 +190,8 @@ section h3 {
     width: 100%;
 }
 
-#funcionamento ul {
-    margin-left: 1%;
-}
-
-#funcionamento .funcionamento-methods{
-    width: 100%;
+#funcionamento .funcionamento-methods{ 
+    width: 100%
 }
 
 
@@ -199,8 +204,8 @@ section h3 {
 .carousel-inner {
     box-sizing: border-box;
     border: #191227 solid;
-    margin-top: 1%;
-    width: 600px;
+    margin-top: 1px;
+    width: 100%;
 }
 
 .carousel-inner:hover {
@@ -215,44 +220,37 @@ section h3 {
 
 /*--------------------
 
-Início seção diário de bordo*/
+Início seção diário de bordo
+*/
 
-#diariodebordo ul {
-    margin-left: 1%;
+#diariodebordo {
+    width: 100%;
 }
 
-/*
-
-Aqui pega as configurações gerais de container, e também as fontes gerais.
-No mais usando ul
-
-------------------------*/
 
 
 /*Inicio sessão builds*/
 
 #builds-classes .container {
     margin-bottom: 10%;
+    display: inline;
+    width: 100%;
 }
 
-#builds-desc .container {
-    display: block;
-}
-
-#builds-classes img, #builds-classes h2 {
-    width: 70%;
+#builds-classes img, #builds-classes h3 {
+    margin-top: 2%;
+    margin-left: 10%;
+    display: inline;
+    width: 40%;
 }
 
 /*fim sessão builds*/
 
 /*Início seção referência*/
 
-#referencias {
-    width: 100%;
-}
-
 #referencias .container img {
     width: 10%;
+    position: relative;
 }
 
 .video {
@@ -260,11 +258,10 @@ No mais usando ul
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
     display: inline-block;
-    width: 30.33%;
-    height: 300px;
+    width: 100%;
+    height: 200px;
 }
 
 .video:hover {
@@ -275,51 +272,69 @@ No mais usando ul
 
 /*Seção redes sociais*/
 
-.redes-methods img, .redes-methods h3 {
-    display: inline-block;
+#redessociais-desc .redes-methods h3 {
+    width: 100%;
+    height: 100%;
+}
+
+.redes-methods img {
+    display: block;
     width: 5%;
-    margin-left: 2%;
 }
-
-/*páginas upchar e leech*/
-
-
-#produtos .container img {
-    width: 30%;
-    height: 20%;
-}
-
-
-#ultimas-novidades h2, #ultimas-novidades p{
-    margin-left: 10%;
-}
-
-#ultimas-novidades ul {
-    margin-left: 10%;
-    width: 100%;
-}
-
-#produtos .container .nossosprodutos{
-    margin-left: 2%;    
-    display: block;
-}
-
-#produtos .nossosprodutos {
-    border-bottom: #191227 solid 3px;
-    margin-top: -10%;
-    display: block;
-}
-
-#produtos .sessaolista {
-    width: 100%;
-    display: block;
-}
-
 
 /*Rodapé*/
 footer {
+    height: 100%;
+    width: 100vw;
     background-color: #191227;
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center;
+}
+
+footer p{
+    margin-left:-10px;
+    width: 100%;
+}
+
+#robbu-whatsapp-button {
+    margin: 0;
+    padding: 0;
+}
+
+#produtos{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#produtos .nossosprodutos{
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+}
+
+
+#produtos img {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+}
+
+#guiaup .container {
+    display: block;
+    width: 100%;
+}
+
+#guiaup h2, #guiaup ul, #guiaup p {
+    display: block;
+    margin-left: 2%;
+}
+
+#guiaup img {
+    margin: 0 auto;
+    width: 100%;
+}
+
 }

@@ -1,0 +1,278 @@
+
+@media only screen and (min-width: 1600px)
+{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header .container, section .container {
+        /*Quando colocamos a vírgula, reaproveitamos o mesmo ajuste
+        para container para posicionar lado a lado*/
+        display: flex;
+        justify-content: space-between; /*Para ficarem um na direita e outro na esquerda*/
+    }
+
+    header, section h2, section h3 {
+        /*Para não ter que colocar nos botões vírgula header ul li, colocamos
+        só header que engloba tudo que esta dentro */
+        font-family: 'Bungee', sans-serif;
+        font-weight: normal;
+    }
+    
+    header {
+        background-color: #191227;
+        color: #ecf0f1;
+    }
+    
+    header h1 {
+        justify-content: border-box;
+        display: inline;
+        font-weight: normal;
+        position: relative;
+        margin-bottom: 130px;
+    }
+
+    header .title {
+        font-size: 50px;
+    }
+    
+    header img {
+        display: inline;
+        float: right;
+        width: 15%;
+    }
+    
+    header li {
+        box-sizing: border-box;
+        display: inline;
+        margin-left: -2%;
+        padding-right: 2%;
+        font-size: 20px; /*Diminuimos os botões pra o nome do site ficar destacado*/      
+        color: #8c52ff;
+        text-decoration: none;
+    }
+    /*O color no botão só vai funcionar colocando também no a*/
+
+    
+    header li a:hover {
+        display: inline;
+        color: #ecf0f1;;
+        text-decoration: underline;
+    } 
+    
+    /*Inicio sessão sobre*/
+    
+    .container {
+        max-width: 1680px; /*Ele só vai chegar a esse maximo em resoluções desse tamanho a*/
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #sobre .container{
+        margin: 0;
+        width: 100%;
+        box-sizing:content-box;
+        justify-content: space-between;
+    }
+    
+    #sobre .store-front {
+        float: left;
+        margin-left: 10%;
+        width: 33.33%;
+        box-sizing: border-box;
+        display: inline;
+    }
+
+    #sobre .text-sobre {
+        width: 50.33%;
+        display: inline;
+        box-sizing: border-box;
+        float: right;
+    }
+    
+    #sobre .container button {
+        box-sizing: border-box;
+        margin-left: 75%;
+        background-color: #8c52ff;
+        position: relative;
+    }   
+
+    
+    #sobre .brandis-list img {
+        width: 3%; /*Diminuindo os logos*/
+    }
+    
+    section .container {
+        /*Uso de cascata, temos uma regra, usamos outra regra
+        subscrevendo a anterior.*/
+        /*Tivemos que reescrever a regra por causa do aling itens da section header
+        assim ele vai startar do começo da página*/
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+
+    /*Sessão funcionamento*/
+
+    #funcionamento .container {
+        width: 100%;
+        display: inline;
+        justify-content: space-between;
+    }
+
+    #funcionamento .funcionamento-methods {
+        float: left;
+        width: 45%;
+        margin-left: 5%;
+    }
+
+    #funcionamento #carousel .container {
+        justify-content: space-between;
+    }
+    
+    #funcionamento #carouselExampleIndicators {
+        float: right;
+        inline-size: 40%;
+        display: block;
+        margin-right: 5%;
+    }
+
+    #referencias {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #referencias .container {
+        box-sizing: border-box;
+        display: inline;
+    }
+
+    #referencias .video {
+        margin-left: 1%;
+        margin-right: 10px;
+        display: inline;
+        height: 350px;
+        width: 30.33%;
+    }
+
+    /*builds das classes*/
+
+    #builds-classes {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #builds-classes .classes {
+        width: 100%;
+        display: inline;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    #builds-classes .classes img, .classes h2, .classes h3 {
+        width: 4%;
+    }
+
+    .social-links img {
+        height: 24px;
+    }
+    
+    .social-links li {
+        display: inline;
+        margin-right: 8px;
+    }
+    
+    .social-links li a {
+        text-decoration: none;
+    }
+    
+    #contact .container {
+        display: block;
+    }
+    
+    .contact-methods {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #produtos{
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        margin: 20px;
+        margin-top: 0;
+    }
+
+
+    #produtos .ultimas-novidades {
+        margin-top: 10%;
+
+    }
+    
+    #produtos .container {
+        box-sizing: border-box;
+        display: inline;
+    }
+
+    #produtos img {
+        box-sizing: border-box;
+        display: inline;
+        float: left;
+        width: 32%;
+        margin-right: 5%;
+    }
+
+    #produtos .nossosprodutos {
+        text-align: left;
+        padding-right: 7%;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: -10%;
+        border: none;
+    }
+
+    #produtos .resnovidades, .resnovidades h3{
+        text-align: left;
+        padding-right: 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #guiaup {
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+        margin: 20px;
+        margin-top: 0;
+    }
+
+
+    #guiaup img {
+        box-sizing: border-box;
+        display: inline;
+        float: left;
+        width: 35%;
+        margin-right: 2%;
+        margin-right: 10%;
+    }
+
+        
+    footer {
+        background-color: #191227;
+        color: #ecf0f1;
+        padding: 18px;
+        width: 100%;
+
+    }
+}
