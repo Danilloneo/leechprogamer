@@ -327,7 +327,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media (min-width:80px) and (max-width: 800px) {
+@media only screen and (min-width: 80px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -654,7 +654,7 @@ footer {
 
 }
 
-@media  (min-width:801) and (max-width:1280px){
+@media only screen and (min-width: 1200px){
         /*Reset do navegador*/
 * {
     margin: 0;
@@ -681,20 +681,23 @@ header h1, section h2, section h3 {
 }
 
 header img {
+    float: left;
     width: 20%;
+    margin: 0;
+}
+header li:nth-child(1){
+    margin-left: -40px;
 }
 
-
-header li {
-    margin-right: 100px;
-    display: block;
+header li { 
+    margin-right: 11px;
+    display:inline;
     align-items: center;
     font-size: 15px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
 header li a {
-    margin-left: 3%;
     color: #8c52ff;
     text-decoration: none;
 } 
@@ -715,12 +718,14 @@ header .button-selected {
 }
 
 header .title {
+    box-sizing: border-box;
+    padding-top: 100px;
     font-size: 30px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
+    display: block;
 }
 
 /*FIM HEADER*/
@@ -731,7 +736,7 @@ body {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    width: 100%;
+    width: 100vh;
     width: 100%;
 }
 
@@ -757,8 +762,9 @@ body {
     border:#191227 solid;
     width: 100%;
     box-sizing: content-box;
-    margin: 0;
-}
+    position: relative;
+    margin-left: 0.5%;
+    margin-bottom: 2%;}
 
 #sobre .text-sobre {
     box-sizing: content-box;
