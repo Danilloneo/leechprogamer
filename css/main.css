@@ -299,7 +299,10 @@ No mais usando ul
     width: 100%;
 }
 
-#produtos .container .nossosprodutos{
+section #produtos .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     margin-left: 2%;    
     display: block;
 }
@@ -327,7 +330,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1099px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -637,8 +640,19 @@ footer p{
     display: block;
 }
 
-#produtos .nossosprodutos{
+section #img-produtos img {
+    box-sizing: border-box;
+    display: inline;
+    width: 80%;
+    height: 50%;
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+section #produtos .nossosprodutos, section #produtos .resnovidades{
     margin-top: 50px;
+    margin-left: 1%;
     width: 100%;
     display: block;
 }
@@ -668,7 +682,7 @@ footer p{
 
 }
 
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1100px)
 {
     * {
         margin: 0;
