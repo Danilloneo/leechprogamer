@@ -327,7 +327,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
     /*Reset do navegador*/
 * {
     margin: 0;
@@ -874,40 +874,40 @@ footer p{
         justify-content: space-between;
     } 
 
-    #produtos{
-        justify-content: space-between;
+    #global {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section #produtos, section #img-produtos{
+        display: inline;
         text-align: center;
         width: 100%;
-        margin: 20px;
         margin-top: 0;
+        justify-content: space-between;
     }
 
-
-    #produtos .ultimas-novidades {
-        margin-top: 10%;
-
-    }
-    
-    #produtos .container {
+    section #img-produtos img {
         box-sizing: border-box;
         display: inline;
-    }
-
-    #produtos img {
-        box-sizing: border-box;
-        display: inline;
-        float: left;
-        width: 32%;
+        width: 80%;
+        height: 50%;
+        margin: 2%;
         margin-right: 5%;
+        margin-left: 2%;
     }
 
-    #produtos .nossosprodutos {
+    section #produtos .nossosprodutos {
         text-align: left;
-        padding-right: 7%;
+        padding-right: 0%;
         width: 100%;
         box-sizing: border-box;
-        margin-top: -10%;
-        border: none;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 2%;
+        box-sizing: content-box;
     }
 
     #produtos .resnovidades, .resnovidades h3{
