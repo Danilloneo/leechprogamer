@@ -691,7 +691,6 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
     }
 
     body {
-        display:inline;
         overflow-x: hidden;
         margin: 0 auto;
         font-family: 'Roboto', sans-serif;
