@@ -357,6 +357,7 @@ header img {
 
 
 header li {
+    width: 100vh;
     margin: 0, auto;
     display: inline;
     justify-content: space-between;
