@@ -1211,6 +1211,49 @@ footer {
         display: flex;
         justify-content: space-between;
     } 
+
+    #produtos{
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        margin: 20px;
+        margin-top: 0;
+    }
+
+
+    #produtos .ultimas-novidades {
+        margin-top: 10%;
+
+    }
+    
+    #produtos .container {
+        box-sizing: border-box;
+        display: inline;
+    }
+
+    #produtos img {
+        box-sizing: border-box;
+        display: inline;
+        float: left;
+        width: 35%;
+        margin-right: 2%;
+    }
+
+    #produtos .nossosprodutos {
+        text-align: left;
+        padding-right: 3%;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: -10%;
+        border: none;
+    }
+
+    #produtos .resnovidades, .resnovidades h3{
+        text-align: left;
+        padding-right: 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
         
     footer {
         background-color: #191227;
