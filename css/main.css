@@ -340,8 +340,8 @@ footer {
 header {
     background-color: #191227;
     color: #ecf0f1;
-    width: 100vw;
-    box-sizing: content-box;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h1, section h2, section h3 {
@@ -352,26 +352,32 @@ header h1, section h2, section h3 {
 }
 
 header img {
+    float: left;
+    margin: 0;
     width: 11vh;
 }
 
 
 header li {
+    padding-right: 3%;
     width: 100vh;
     margin: 0, auto;
     display: inline;
     justify-content: space-between;
     align-items: center;
-    font-size: 8px; /*Diminuimos os botões pra o nome do site ficar destacado*/
+    font-size: 9px; /*Diminuimos os botões pra o nome do site ficar destacado*/
 }
 /*O color no botão só vai funcionar colocando também no a*/
 
 header li a {
     display: inline;
-    margin-left: 3%;
     color: #8c52ff;
     text-decoration: none;
 } 
+
+header li :nth-child(1){
+    margin-left: -0.1%;
+}
 
 header li a:hover {
     display: inline;
@@ -390,6 +396,8 @@ header .button-selected {
 }
 
 header .title {
+    margin-top: 20px;
+    font-size: 20px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -687,9 +695,7 @@ header img {
     width: 20%;
     margin: 0;
 }
-header li:nth-child(1){
-    margin-left: -40px;
-}
+
 
 header li { 
     margin-right: 11px;
@@ -720,8 +726,8 @@ header .button-selected {
 }
 
 header .title {
+    margin-top: 10%;
     box-sizing: border-box;
-    padding-top: 100px;
     font-size: 30px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     background-clip: content-box;
