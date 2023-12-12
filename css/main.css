@@ -614,11 +614,16 @@ Início seção diário de bordo
 /*Rodapé*/
 footer {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: #191227;
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center;
+}
+
+footer p{
+    margin-left:-10px;
+    width: 100%;
 }
 
 #robbu-whatsapp-button {
