@@ -327,7 +327,7 @@ footer {
 
 /*RESPONSIVIDADE*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     /*Reset do navegador*/
 * {
     margin: 0;
