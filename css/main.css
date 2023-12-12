@@ -63,7 +63,6 @@ header .title {
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
 }
 
 header .container, section .container {
@@ -90,7 +89,7 @@ body{
 }
 
 .container {
-    max-width: 1881px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto; /*Centro*/
     overflow-x: hidden;
@@ -343,7 +342,6 @@ header {
     color: #ecf0f1;
     width: 100%;
     height: 100%;
-    display:block;
     box-sizing: content-box;
 }
 
@@ -657,7 +655,7 @@ footer {
 
 }
 
-@media  (min-width:801) and (max-width:1680px){
+@media  (min-width:801) and (max-width:1280px){
         /*Reset do navegador*/
 * {
     margin: 0;
