@@ -435,9 +435,6 @@ body {
     width: 100%;
 }
 
-body section #globalprodutos {
-    overflow: hidden;
-}
 
 .container {
     width: 100%;
@@ -658,7 +655,7 @@ section #produtos{
     box-sizing: border-box;
 }
 
-section #globalprodutos {
+section #globalprodutos .container {
     overflow: hidden;
 }
 
