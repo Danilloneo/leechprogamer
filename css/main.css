@@ -648,11 +648,12 @@ footer p{
     padding: 0;
 }
 
-section #produtos{
+section #produtos, section #globalprodutos, section #globalprodutos .nossosprodutos, section #globalprodutos .resnovidades{
     width: 100%;
     margin: 0 auto;
     display: block;
     box-sizing: border-box;
+    overflow: hidden
 }
 
 section #globalprodutos .container {
@@ -666,6 +667,7 @@ section #img-produtos img {
     height: 50%;
     margin: 2%;
     margin-right: 5%;
+    margin-left: 10%;
 }
 
 section #produtos .nossosprodutos, section #produtos .resnovidades{
