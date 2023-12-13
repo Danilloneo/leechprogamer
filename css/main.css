@@ -435,6 +435,10 @@ body {
     width: 100%;
 }
 
+body #globalprodutos {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     margin: 0 auto; /*Centro*/
