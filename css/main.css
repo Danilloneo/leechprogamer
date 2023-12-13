@@ -674,6 +674,7 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
     margin-left: 1%;
     width: 100%;
     display: block;
+    overflow: hidden;
 }
 
 
