@@ -435,7 +435,7 @@ body {
     width: 100%;
 }
 
-body #globalprodutos {
+body section #globalprodutos {
     overflow: hidden;
 }
 
