@@ -437,8 +437,10 @@ header .container, section .container {
 body {
     /*Tudo que esta dentro do body com fonte mais arredondada, parágrafos, inputs etc.*/
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
     width: 100%;
+    overflow-x:   hidden;
+    display: block;
+    box-sizing: border-box;
 }
 
 
