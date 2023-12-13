@@ -666,6 +666,7 @@ section #img-produtos img {
 }
 
 section #produtos .nossosprodutos, section #produtos .resnovidades{
+    padding: 3.8%;
     margin-left: 1%;
     width: 100%;
     display: block;
