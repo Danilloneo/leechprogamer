@@ -725,6 +725,8 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
     }
 
     header .title {
+        margin-right: -38%;
+        margin-left: -4%;
         font-size: 220%;
     }
     
@@ -732,14 +734,14 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
         display: inline;
         float: right;
         width: 15%;
-    }
-    
+        margin-right: -40%;
+    }  
     header li {
         box-sizing: border-box;
         display: inline;
         margin-left: -2%;
         padding-right: 2%;
-        font-size: 20px; /*Diminuimos os botões pra o nome do site ficar destacado*/      
+        font-size: 100%; /*Diminuimos os botões pra o nome do site ficar destacado*/      
         color: #8c52ff;
         text-decoration: none;
     }
