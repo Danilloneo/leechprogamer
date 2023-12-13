@@ -89,6 +89,15 @@ body{
     overflow: hidden;
 }
 
+
+section #globalprodutos {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1680px;
     width: 100%;
