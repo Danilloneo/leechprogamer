@@ -528,12 +528,15 @@ section h3 {
 /*fim configs gerais*/
 
 /*Seção funcionamento*/
-#funcionamento .container {
+section #funcionamento .container {
     width: 100%;
+    box-sizing: border-box;
 }
 
-#funcionamento .funcionamento-methods{ 
-    width: 100%
+section #funcionamento .funcionamento-methods{ 
+    width: 100%;
+    margin-left:3%;
+    margin-right: 1%;
 }
 
 
