@@ -902,6 +902,14 @@ section #produtos .nossosprodutos, section #produtos .resnovidades{
         box-sizing: border-box;
     }
 
+    section #globalprodutos {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
     section #produtos, section #img-produtos{
         display: inline;
         text-align: center;
