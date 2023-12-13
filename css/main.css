@@ -636,11 +636,13 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
     text-align: center;
+    overflow: hidden;
 }
 
 footer p{
     margin-left:-10px;
     width: 100%;
+    overflow: hidden;
 }
 
 #robbu-whatsapp-button {
