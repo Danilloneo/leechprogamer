@@ -371,6 +371,10 @@ header img {
     width: 20%;
 }
 
+section #overflow {
+    overflow: hidden;
+}
+
 
 header li {
     box-sizing: border-box;
@@ -607,7 +611,7 @@ Início seção diário de bordo
     margin-top: 5%;
     margin-bottom: 5%;
     margin: 0 auto;
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 200px;
 }
@@ -633,7 +637,7 @@ Início seção diário de bordo
 /*Rodapé*/
 footer {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: #191227;
     color: #ecf0f1;
     padding: 16px 0;
@@ -642,7 +646,6 @@ footer {
 }
 
 footer p{
-    margin-left:-10px;
     width: 100%;
     overflow: hidden;
 }
@@ -652,30 +655,15 @@ footer p{
     padding: 0;
 }
 
-section #produtos, section #globalprodutos, section #globalprodutos .nossosprodutos, section #globalprodutos .resnovidades{
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    box-sizing: border-box;
-    overflow: hidden
-}
-
-section #globalprodutos .container {
-    overflow: hidden;
-}
-
 section #img-produtos img {
     box-sizing: border-box;
-    display: inline;
-    width: 80%;
+    display: block;
+    width: 100%;
     height: 50%;
-    margin: 2%;
-    margin-right: 5%;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 section #produtos .nossosprodutos, section #produtos .resnovidades{
-    margin-top: 50px;
     margin-left: 1%;
     width: 100%;
     display: block;
